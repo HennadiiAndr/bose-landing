@@ -1,0 +1,62 @@
+.buy-direct-container{
+   display: flex;
+   width: 1260px;
+   min-height: 311px;
+   justify-content: center;
+   .buy-direct-block{
+      display: flex;
+      width: 1020px;
+      min-height: 311px;
+      flex-direction: column;
+      .buy-direct-textblock{
+         display: flex;
+         width: 1020px;
+         min-height: 311px;
+         justify-content: flex-start;
+         .buy-direct-text{
+            display: flex;
+            width: 846px;
+            min-height: 311px;
+            justify-content: space-between;
+            .buy-direct-title{
+               color: #292929;
+               font-size: 48px;
+               font-family: Inter;
+               font-weight: 700;
+               line-height: 48px;
+               word-wrap: break-word
+            }
+            .buy-direct-features{
+               display: flex;
+               width: 411px;
+               height: 311px;
+               flex-direction: column;
+               justify-content: space-between;
+               .features-list{
+                  display: flex;
+                  width: 411px;
+                  min-height: 136px;
+                  flex-direction: column;
+                  justify-content: space-between;
+                  .feature{
+                     color: #292929;
+                     font-size: 16px;
+                     font-family: Inter;
+                     font-weight: 700;
+                     line-height: 22.40px;
+                     word-wrap: break-word
+                  }
+                  .promo-text{
+                     color: #292929;
+                     font-size: 16px;
+                     font-family: Inter;
+                     font-weight: 400;
+                     line-height: 27px;
+                     word-wrap: break-word
+                  }
+               }
+            }
+         }
+      }
+   }
+}

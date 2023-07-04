@@ -1,0 +1,107 @@
+body{
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   min-height: 5000px;
+   .mainflow{
+      display: flex;
+      width: 1260px;
+      min-height: 5000px;
+      flex-direction: column;
+      .header-block{
+         display: flex;
+         width: 1260px;
+         min-height: 720px;
+         flex-direction: column;
+         background-image: url('../assets/image_3.png');
+         header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1260px;
+            height: 128px;
+            position: relative;
+            z-index: 8;
+            .navbar-block{
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               width: 1020px;
+               height: 32px;
+               .logo{
+               width: 191px;
+               height: 24px;
+               }
+               .menu-phone-block{
+                  display: flex;
+                  align-items: center;
+                  justify-content: flex-end;
+                  width: 243px;
+                  height: 32px;
+                  .number{
+                     opacity: 0;
+                     width: 139px;
+                     height: 16px;
+                     order: 1;
+                     color: #292929;
+                     font-size: 12px;
+                     font-family: Inter;
+                     font-weight: 700;
+                     text-transform: uppercase;
+                     line-height: 16px;
+                     letter-spacing: 2px;
+                     word-wrap: break-word;
+                  }
+                  .phone{
+                     order: 2;
+                     width: 32px;
+                     height: 32px;
+                     margin-left: 8px;
+                     background-image: url('../assets/Icon-Phone-call.png');
+                  }
+                  .phone:hover~.number{
+                     opacity: 1;
+                  }
+                  .burger{
+                     width: 32px;
+                     order: 3;
+                     height: 32px;
+                     margin-left: 32px;
+                     background-image: url('../assets/Icon-Burger-menu.png');
+                     &:hover{
+                        background-image: url('../assets/Icon-Burger-menu-hover.png');
+                     }
+                  }
+               }
+            }
+            
+         }
+         .header-text-block{
+            display: flex;
+            justify-content: space-between;
+            width: 498px;
+            height: 206px;
+            position: relative;
+            z-index: 8;
+            align-items: flex-start;
+            margin-left: 120px;
+            margin-top: 324px;
+            flex-direction: column;
+            .sound-text-block{
+               color: #292929;
+               font-size: 48px;
+               font-family: Inter;
+               font-style: italic;
+               font-weight: 800;
+               line-height: 48px;
+               word-wrap: break-word
+            }
+         }
+      }
+   }
+}
