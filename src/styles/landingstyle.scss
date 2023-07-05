@@ -7,26 +7,26 @@ body{
    display: flex;
    justify-content: center;
    width: 100%;
-   min-height: 5000px;
+   min-height: 4500px;
    .mainflow{
       display: flex;
       width: 1260px;
-      min-height: 5000px;
+      min-height: 4500px;
       flex-direction: column;
       .header-block{
          display: flex;
          width: 1260px;
-         min-height: 720px;
+         height: 720px;
+         position: relative;
          flex-direction: column;
          background-image: url('../assets/image_3.png');
          header{
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: flex-end;
             align-items: center;
             width: 1260px;
-            height: 128px;
-            position: relative;
-            z-index: 8;
+            min-height: 76px;
             .navbar-block{
                display: flex;
                justify-content: space-between;
@@ -80,6 +80,91 @@ body{
                }
             }
             
+         }
+        .header-menu-container{
+            display: flex;
+            width: 1260px;
+            height: 700px;
+            z-index: 10;
+            background: #E8EFF9;
+            position: absolute;
+            top: 80px;
+            justify-content: center;
+            .header-menu-block{
+               display: flex;
+               width: 1020px;
+               height: 449px;
+               margin-top: 48px;
+               flex-direction: column;
+               .header-menu-logo{
+                  display: flex;
+                  width: 1020px;
+                  height: 32px;
+                  justify-content: space-between;
+                  align-items: center;
+               }
+               .menu-items-container{
+                  display: flex;
+                  width: 1020px;
+                  height: 345px;
+                  margin-top: 80px;
+                  justify-content: space-between;
+                  flex-direction: column;
+                  .menu-items{
+                     display: flex;
+                     width: 198px;
+                     height: 238px;
+                     justify-content: space-between;
+                     flex-direction: column;
+                     color: #292929;
+                     font-size: 21px;
+                     font-family: Inter;
+                     font-weight: 600;
+                     text-transform: uppercase;
+                     line-height: 22px;
+                     letter-spacing: 2px;
+                     word-wrap: break-word
+                  }
+                  .menu-item:hover{
+                     cursor: default;
+                     text-decoration: underline;
+                  }
+                  .call-items{
+                     display: flex;
+                     width: 198px;
+                     height: 67px;
+                     justify-content: space-between;
+                     flex-direction: column;
+                     .call-item-number{
+                        color: #292929;
+                        font-size: 16px;
+                        font-family: Inter;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        line-height: 27px;
+                        word-wrap: break-word;
+                        &:hover{
+                           cursor: default;
+                           text-decoration: underline;
+                        }
+                     }
+                     .call-item{
+                        color: #292929;
+                        font-size: 12px;
+                        font-family: Inter;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        line-height: 16px;
+                        letter-spacing: 2px;
+                        word-wrap: break-word;
+                        &:hover{
+                           cursor: default;
+                           text-decoration: underline;
+                        }
+                     }
+                  }
+               }
+            }
          }
          .header-text-block{
             display: flex;

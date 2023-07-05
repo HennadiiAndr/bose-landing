@@ -10,15 +10,21 @@ function Contacts () {
                <div className='contacts-forms-block'>
                   <div className='contacts-form'>
                      <div className='contact-inputs-block'>
-                        <div className='contact-input'>
-                           <div className='text'>Name</div>
-                        </div>
-                        <div className='contact-input'>
-                           <div className='text'>Email</div>
-                        </div>
-                        <div className='message-input'>
-                           <div className='message'>Message</div> 
-                        </div>
+                        <input 
+                           className='contact-input'
+                           placeholder='Name'
+                        >
+                        </input>
+                        <input 
+                           className='contact-input'
+                           placeholder='Email'
+                        >  
+                        </input>
+                        <textarea 
+                           className='message-input'
+                           placeholder='Message'
+                        >
+                        </textarea>
                      </div>
                      <button className='send-button'>Send</button>
                   </div>
