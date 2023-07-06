@@ -4,13 +4,23 @@ import Categories from './components/categories';
 import './styles/landingstyle.scss';
 import Buydirect from './components/buyDirect';
 import Contacts from './components/contacts';
+import ModalMenu from './components/modal-menu';
+import { useState } from 'react';
 import Footerphoto from './assets/photofooter.png';
 
 function App() {
+  const [modalActive, setModalActive] = useState(true)
   return (
     <div className="main">
+      <ModalMenu
+        active={modalActive} 
+        setActive={setModalActive}
+      />
       <div className="mainflow">
-        <Header/>
+        <Header
+          active={modalActive} 
+          setActive={setModalActive}
+        />
         <Recommended/>
         <Categories/>
         <Buydirect/>

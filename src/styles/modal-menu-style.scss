@@ -1,0 +1,96 @@
+.modal{
+   width: 100vw;
+   height: 100vh;
+   background-color: rgba(0,0,0,0.4);
+   position: fixed;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transform: scale(0);
+}   
+.modal.active{
+   transform: scale(1);
+}
+      
+.modal-menu-container{
+   display: flex;
+   width: 1260px;
+   height: 700px;
+   background: #E8EFF9;
+   justify-content: center;
+   .header-menu-block{
+      display: flex;
+      width: 1020px;
+      height: 449px;
+      margin-top: 48px;
+      flex-direction: column;
+      .header-menu-logo{
+         display: flex;
+         width: 1020px;
+         height: 32px;
+         justify-content: space-between;
+         align-items: center;
+      }
+      .menu-items-container{
+         display: flex;
+         width: 1020px;
+         height: 345px;
+         margin-top: 80px;
+         justify-content: space-between;
+         flex-direction: column;
+         .menu-items{
+            display: flex;
+            width: 198px;
+            height: 238px;
+            justify-content: space-between;
+            flex-direction: column;
+            color: #292929;
+            font-size: 21px;
+            font-family: Inter;
+            font-weight: 600;
+            text-transform: uppercase;
+            line-height: 22px;
+            letter-spacing: 2px;
+            word-wrap: break-word
+         }
+         .menu-item:hover{
+            cursor: default;
+            text-decoration: underline;
+         }
+         .call-items{
+            display: flex;
+            width: 198px;
+            height: 67px;
+            justify-content: space-between;
+            flex-direction: column;
+            .call-item-number{
+               color: #292929;
+               font-size: 16px;
+               font-family: Inter;
+               font-weight: 700;
+               text-transform: uppercase;
+               line-height: 27px;
+               word-wrap: break-word;
+               &:hover{
+                  cursor: default;
+                  text-decoration: underline;
+               }
+            }
+            .call-item{
+               color: #292929;
+               font-size: 12px;
+               font-family: Inter;
+               font-weight: 700;
+               text-transform: uppercase;
+               line-height: 16px;
+               letter-spacing: 2px;
+               word-wrap: break-word;
+               &:hover{
+                  cursor: default;
+                  text-decoration: underline;
+               }
+            }
+         }
+      }
+   }
+}
