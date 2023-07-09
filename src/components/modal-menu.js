@@ -4,16 +4,17 @@ import CloseIcon from '../assets/Icon-Close.png';
 import LogoBose from '../assets/Logo_Bose.png';
 
 function ModalMenu ({active, setActive}) {
-   console.log(active)
+   console.log(active);
    return (
       <div className={active ? 'modal active': 'modal'} onClick={()=> setActive(false)}>
          <div className='modal-menu-container' onClick={(e)=> e.stopPropagation()}>
             <div className='header-menu-block'>
                <div className='header-menu-logo'>
-                  <img src={LogoBose}  alt='img'></img>
+                  <img src={LogoBose}  alt='img' className="logo"></img>
                   <img 
                      src={CloseIcon}  
                      alt='img'
+                     className="close-icon"
                      onClick={()=> setActive(false)}
                   ></img>
                </div>

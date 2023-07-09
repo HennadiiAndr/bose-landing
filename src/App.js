@@ -9,7 +9,7 @@ import { useState } from 'react';
 import Footerphoto from './assets/photofooter.png';
 
 function App() {
-  const [modalActive, setModalActive] = useState(true)
+  const [modalActive, setModalActive] = useState(false)
   return (
     <div className="main">
       <ModalMenu
@@ -25,7 +25,7 @@ function App() {
         <Categories/>
         <Buydirect/>
         <Contacts/>
-        <img src={Footerphoto} alt='img'></img>
+        <img src={Footerphoto} alt='img' style={{display: 'none'}}></img>
       </div>
     </div>
   );
