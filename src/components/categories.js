@@ -12,11 +12,16 @@ function Categories (){
       <div className='categories-block-container'>
          <div className='categories-block'>
             <div className='categories-block-text'>Browse Bose<br/>products by category</div>
+            <div className='categories-small-text'>Browse Bose<br/>products by<br/> category</div>
             <div className='categories-list'>
                <div className='category'>
                   <div className='category-picture'>
-                     <img src={HeadPhonePicOne} alt='img'></img>
-                     <img src={HeadPhonePicTwo} alt='img'></img>
+                     <div className='picture-one'>
+                        <img src={HeadPhonePicOne} alt='img'></img>
+                     </div>
+                     <div className='picture-two'>
+                        <img src={HeadPhonePicTwo} alt='img'></img>
+                     </div>
                   </div>
                   <div className='category-name'>
                      Headphones & earbuds
@@ -24,8 +29,12 @@ function Categories (){
                </div>
                <div className='category'>
                   <div className='category-picture'>
-                     <img src={speakerOne} alt='img'></img>
-                     <img src={speakerTwo} alt='img'></img>
+                     <div className='picture-one'>
+                        <img src={speakerOne} alt='img'></img>
+                     </div>
+                     <div className='picture-two'>
+                        <img src={speakerTwo} alt='img'></img>
+                     </div>
                   </div>
                   <div className='category-name'>
                      Speakers
@@ -33,8 +42,12 @@ function Categories (){
                </div>
                <div className='category'>
                   <div className='category-picture'>
-                     <img src={sunglassesOne} alt='img'></img>
-                     <img src={sunglassesTwo} alt='img'></img>
+                     <div className='picture-two'>
+                        <img src={sunglassesOne} alt='img'></img>
+                     </div>
+                     <div className='picture-one'>
+                        <img src={sunglassesTwo} alt='img'></img>
+                     </div>
                   </div>
                   <div className='category-name'>
                      Audio sunglasses

@@ -12,7 +12,9 @@ function Recommended () {
             <div className="recommended-text">Recommended</div>
             <div className="examples-block">
                <div className="example">
-                  <img src={BoseOne} alt='img'></img>
+                  <div className="example-img">
+                     <img src={BoseOne} alt='img'></img>
+                  </div>
                   <div className="characteristics-block">
                      <div className="name">Bose portable Smart speaker</div>
                      <div className="description">Smart home</div>
@@ -20,7 +22,9 @@ function Recommended () {
                   </div>
                </div>
                <div className="example">
-                  <img src={BoseTwo} alt='img'></img>
+                  <div className="example-img">
+                     <img src={BoseTwo} alt='img'></img>
+                  </div>
                   <div className="characteristics-block">
                      <div className="name">SoundLink Flex Bluetooth speaker</div>
                      <div className="description">Portable bluetooth</div>
@@ -28,7 +32,9 @@ function Recommended () {
                   </div>
                </div>
                <div className="example">
-                  <img src={BoseThree} alt='img'></img>
+                  <div className="example-img">
+                     <img src={BoseThree} alt='img'></img>
+                  </div>
                   <div className="characteristics-block">
                      <div className="name">SoundLink Color Bluetooth speaker II</div>
                      <div className="description">Portable bluetooth</div>

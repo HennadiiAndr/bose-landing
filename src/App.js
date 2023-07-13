@@ -25,7 +25,7 @@ function App() {
         <Categories/>
         <Buydirect/>
         <Contacts/>
-        <img src={Footerphoto} alt='img' style={{display: 'none'}}></img>
+        <img src={Footerphoto} alt='img' className='footer-style'></img>
       </div>
     </div>
   );

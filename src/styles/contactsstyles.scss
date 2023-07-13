@@ -1,49 +1,112 @@
 .contacts-block-container{
-   display: none;
-   width: 1260px;
-   min-height: 460px;
+   display: flex;
+   max-width: 1260px;
+   width: 100%;
+   height: 460px;
    margin-top: 120px;
    justify-content: center;
+   @media (max-width: 744px){
+      max-width: 744px;
+      width: 100%;
+      height: 452px;
+   }
+   @media (max-width: 480px){
+      max-width: 480px;
+      width: 100%;
+      height: 736px;
+   }
+   @media (max-width: 320px){
+      max-width: 320px;
+      width: 100%;
+      height: 736px;
+   }
    .contacts-block{
       display: flex;
-      width: 1020px;
-      min-height: 460px;
+      max-width: 1020px;
+      width: 100%;
+      height: 460px;
       flex-direction: column;
+      @media (max-width: 744px){
+         max-width: 600px;
+         width: 100%;
+         height: 452px;
+      }
+      @media (max-width: 480px){
+         max-width: 280px;
+         width: 100%;
+         height: 736px;
+      }
       .contacts-block-title{
          display: flex;
-         width: 1020px;
+         width: 100%;
          justify-content: center;
          color: #292929;
          font-size: 48px;
          font-family: Inter;
          font-weight: 700;
          line-height: 48px;
-         word-wrap: break-word
+         word-wrap: break-word;
+         @media (max-width: 744px){
+            font-size: 40px;
+            line-height: 40px;
+         }
+         @media (max-width: 480px){
+            font-size: 32px;
+            line-height: 32px;
+         }
       }
       .contact-forms-container{
          display: flex;
-         width: 1020px;
-         min-height: 382px;
+         width: 100%;
+         height: 382px;
          margin-top: 48px;
          justify-content: flex-start;
+         @media (max-width: 480px){
+            max-width: 280px;
+            width: 100%;
+            height: 656px;
+         }
          .contacts-forms-block{
             display: flex;
-            width: 846px;
+            max-width: 846px;
+            width: 100%;
             min-height: 382px;
             justify-content: space-between;
+            
+            @media (max-width: 744px){
+               max-width: 546px;
+               width: 100%;
+            }
+            @media (max-width: 480px){
+               flex-direction: column;
+               max-width: 280px;
+               width: 100%;
+               height: 656px;
+            }
             .contacts-form{
                display: flex;
-               width: 408px;
-               min-height: 382px;
+               max-width: 408px;
+               width: 100%;
+               height: 382px;
+               justify-content: space-between;
                flex-direction: column;
+               @media (max-width: 744px){
+                  max-width: 285px;
+                  width: 100%;
+               }
+               @media (max-width: 480px){
+                  max-width: 280px;
+                  width: 100%;
+               }
                .contact-inputs-block{
                   display: flex;
-                  width: 408px;
-                  min-height: 276px;
+                  width: 100%;
+                  height: 276px;
                   flex-direction: column;
                   justify-content: space-between;
                   .contact-input{
-                     width: 408px;
+                     max-width: 368px;
+                     width: 100%;
                      height: 8px;
                      outline: none;
                      background: #F8F8FA; 
@@ -55,6 +118,14 @@
                      font-family: Inter;
                      font-weight: 400;
                      line-height: 20px;
+                     @media (max-width: 744px){
+                        max-width: 245px;
+                        width: 100%;
+                     }
+                     @media (max-width: 480px){
+                        max-width: 240px;
+                        width: 100%;
+                     }
                      &:hover{
                         border: 0.50px #D5D7DE solid;
                         &::placeholder{
@@ -83,7 +154,8 @@
                   }
                   .message-input{
                      display: flex;
-                     width: 408px;
+                     max-width: 368px;
+                     width: 100%;
                      height: 108px;
                      background: #F8F8FA; 
                      border-radius: 40px;
@@ -96,6 +168,14 @@
                      line-height: 20px;
                      word-wrap: break-word;
                      padding: 20px;
+                     @media (max-width: 744px){
+                        max-width: 245px;
+                        width: 100%;
+                     }
+                     @media (max-width: 480px){
+                        max-width: 240px;
+                        width: 100%;
+                     }
                      &:hover{
                         border: 0.50px #D5D7DE solid;
                         &::placeholder{
@@ -124,29 +204,55 @@
                   }
                }
                .send-button{
-                  display: flex;
-                  width: 408px;
+                  background: #292929; 
+                  border-radius: 40px; 
+                  justify-content: center; 
+                  text-align: center;
+                  align-items: center; 
+                  width: 324px;
                   height: 56px;
-                  margin-top: 32px;
-                  border-radius: 40px;
-                  justify-content: center;
-                  align-items: center;
-                  color: #292929;
+                  color: white;
                   font-size: 16px;
                   font-family: Inter;
                   font-weight: 700;
                   line-height: 27px;
                   word-wrap: break-word;
-                  border: 1.50px #292929 solid;
+                  @media (max-width: 744px){
+                     width: 392px;
+                  }
+                  @media (max-width: 320px){
+                     width: 280px;
+                  }
+                  &:hover{
+                     color: #292929;
+                     font-size: 16px;
+                     font-family: Inter;
+                     font-weight: 700;
+                     line-height: 27px;
+                     word-wrap: break-word;
+                     border: 1.50px #292929 solid;
+                     background-color: white;
+                  }
+                  &:active{
+                     color: white;
+                     font-size: 16px;
+                     font-family: Inter;
+                     font-weight: 700;
+                     line-height: 27px;
+                     word-wrap: break-word;
+                     background-color: #111111;
+                  }
                }
             }
             .contacts{
                display: flex;
-               width: 237px;
+               max-width: 237px;
+               width: 100%;
                height: 244px;
                flex-direction: column;
                justify-content: space-between;
                .phone-title, .email-title, .address-title{
+                  display: flex;
                   color: #9FADC2;
                   font-size: 14px;
                   font-family: Inter;
@@ -155,6 +261,7 @@
                   word-wrap: break-word
                }
                .phone-number, .email-address, .address-data{
+                  display: flex;
                   color: #3E3E3E;
                   font-size: 16px;
                   font-family: Inter;
