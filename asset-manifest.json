@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/bose-landing/static/css/main.717d2cdf.css",
+    "main.js": "/bose-landing/static/js/main.b0077a8b.js",
+    "static/js/787.3d0064c1.chunk.js": "/bose-landing/static/js/787.3d0064c1.chunk.js",
+    "static/media/photofooter.png": "/bose-landing/static/media/photofooter.037f25bee32eae719db6.png",
+    "static/media/image_3.png": "/bose-landing/static/media/image_3.aaa1d9ba552346136bb0.png",
+    "static/media/speaker_one.png": "/bose-landing/static/media/speaker_one.39da38bcfda41e1e25b6.png",
+    "static/media/sunglasses_two.png": "/bose-landing/static/media/sunglasses_two.7d0694e0b02fc3054f35.png",
+    "static/media/Vectorhead.png": "/bose-landing/static/media/Vectorhead.4fe3aab80ab5fb559d49.png",
+    "static/media/speaker_two.png": "/bose-landing/static/media/speaker_two.d1a25c54102de2ca4131.png",
+    "static/media/head2.png": "/bose-landing/static/media/head2.2acdb353c831b921933e.png",
+    "static/media/sunglasses_one.png": "/bose-landing/static/media/sunglasses_one.93bd082864975030c722.png",
+    "static/media/image_4.png": "/bose-landing/static/media/image_4.7f81318b343c7053dd9a.png",
+    "static/media/Bose-three.png": "/bose-landing/static/media/Bose-three.64ae1c8fcf2caaf8c48a.png",
+    "static/media/Bose-two.png": "/bose-landing/static/media/Bose-two.83bd4574966dba43a941.png",
+    "static/media/Bose-one.png": "/bose-landing/static/media/Bose-one.0535ff329e08a98a07d3.png",
+    "index.html": "/bose-landing/index.html",
+    "main.717d2cdf.css.map": "/bose-landing/static/css/main.717d2cdf.css.map",
+    "main.b0077a8b.js.map": "/bose-landing/static/js/main.b0077a8b.js.map",
+    "787.3d0064c1.chunk.js.map": "/bose-landing/static/js/787.3d0064c1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.717d2cdf.css",
+    "static/js/main.b0077a8b.js"
+  ]
+}
